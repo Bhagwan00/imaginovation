@@ -1,0 +1,388 @@
+{
+	"info": {
+		"_postman_id": "82562dbb-ec6f-4337-9415-6533cea9f5ad",
+		"name": "imaginovation",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "5484487",
+		"_collection_link": "https://society-management-113356.postman.co/workspace/My-Workspace~2c775bc5-2797-4126-84b3-1c2678a41caa/collection/5484487-82562dbb-ec6f-4337-9415-6533cea9f5ad?action=share&source=collection_link&creator=5484487"
+	},
+	"item": [
+		{
+			"name": "user",
+			"item": [
+				{
+					"name": "task",
+					"item": [
+						{
+							"name": "comment",
+							"item": [
+								{
+									"name": "create",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "1|q6iBxhLH1996D81jIkNUxFAqBzy4cVHsZTFHo77dec3ad9d2",
+													"type": "string"
+												}
+											]
+										},
+										"method": "POST",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "formdata",
+											"formdata": [
+												{
+													"key": "message",
+													"value": "Message",
+													"type": "text"
+												},
+												{
+													"key": "task_id",
+													"value": "1",
+													"type": "text"
+												}
+											]
+										},
+										"url": {
+											"raw": "http://192.168.7.9:3000/api/user/comments/create",
+											"protocol": "http",
+											"host": [
+												"192",
+												"168",
+												"7",
+												"9"
+											],
+											"port": "3000",
+											"path": [
+												"api",
+												"user",
+												"comments",
+												"create"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "list",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "1|aRZ7OgjkkHFu43DczFyXGXX5gAKhGenEnMWSLyoVcd4feca",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "http://192.168.7.9:3000/api/user/tasks",
+									"protocol": "http",
+									"host": [
+										"192",
+										"168",
+										"7",
+										"9"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"user",
+										"tasks"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "create",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "1|q6iBxhLH1996D81jIkNUxFAqBzy4cVHsZTFHo77dec3ad9d2",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "title",
+											"value": "Task 2",
+											"type": "text"
+										},
+										{
+											"key": "description",
+											"value": "This is description",
+											"type": "text"
+										},
+										{
+											"key": "due_date",
+											"value": "2025-07-16",
+											"type": "text"
+										},
+										{
+											"key": "status",
+											"value": "Pending",
+											"type": "text"
+										},
+										{
+											"key": "priority",
+											"value": "High",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://192.168.7.9:3000/api/user/tasks/create",
+									"protocol": "http",
+									"host": [
+										"192",
+										"168",
+										"7",
+										"9"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"user",
+										"tasks",
+										"create"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "update",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "1|q6iBxhLH1996D81jIkNUxFAqBzy4cVHsZTFHo77dec3ad9d2",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "title",
+											"value": "Task 2",
+											"type": "text"
+										},
+										{
+											"key": "description",
+											"value": "This is description",
+											"type": "text"
+										},
+										{
+											"key": "due_date",
+											"value": "2025-07-16",
+											"type": "text"
+										},
+										{
+											"key": "status",
+											"value": "Pending",
+											"type": "text"
+										},
+										{
+											"key": "priority",
+											"value": "High",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://192.168.7.9:3000/api/user/tasks/create",
+									"protocol": "http",
+									"host": [
+										"192",
+										"168",
+										"7",
+										"9"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"user",
+										"tasks",
+										"create"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "login",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "email",
+									"value": "sgulgowski@example.org",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "password1",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://192.168.7.9:3000/api/user/login",
+							"protocol": "http",
+							"host": [
+								"192",
+								"168",
+								"7",
+								"9"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"user",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "profile",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "1|aRZ7OgjkkHFu43DczFyXGXX5gAKhGenEnMWSLyoVcd4feca",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://192.168.7.9:3000/api/user",
+							"protocol": "http",
+							"host": [
+								"192",
+								"168",
+								"7",
+								"9"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "user-list",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "1|q6iBxhLH1996D81jIkNUxFAqBzy4cVHsZTFHo77dec3ad9d2",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://192.168.7.9:3000/api/user/tasks",
+							"protocol": "http",
+							"host": [
+								"192",
+								"168",
+								"7",
+								"9"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"user",
+								"tasks"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
